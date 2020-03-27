@@ -6,3 +6,7 @@ out*.png
 *.caffemodel
 models/
 !models/download_models.sh
+log
+output/
+styles/
+content/
