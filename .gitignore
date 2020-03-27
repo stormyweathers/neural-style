@@ -8,5 +8,6 @@ models/
 !models/download_models.sh
 log
 output/
-styles/
+styles/*
+!styles/style-list
 content/
