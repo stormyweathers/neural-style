@@ -2,18 +2,19 @@
 import numpy as np
 from numpy import pi,sin,cos,arctan
 import subprocess
-
+import sys
 ## quickly run all styles with default params,
 ## compile a matrix
 
 #########################################
 
 args={}
-
+assert len(sys.argv)>2,"usage: python style_blast.py <path/to/content>"
+content=sys.argv[1]
+args['content_image']=str(content)
 ### Commonly changed for art
 args['output_image']="out/out.jpg" #[out.png]
 args['style_image']="styles/elephant.jpg" #Style target image [examples/inputs/seated-nude.jpg]
-args['content_image']="content/jason.jpg" #Content target image [examples/inputs/tubingen.jpg]
 args['style_scale']=1 #[1]
 args['style_weight']=100 #[100]
 args['content_weight']=5 #[5]
